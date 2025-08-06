@@ -1,4 +1,4 @@
-package com.seuapp.model;
+package main.java.com.seuapp.model;
 
 public class MovieResponse {
     private String title;
