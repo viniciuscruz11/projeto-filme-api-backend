@@ -1,0 +1,6 @@
+com\seuapp\service\MovieService.class
+main\java\com\seuapp\MyApplication.class
+com\seuapp\model\Movie.class
+com\seuapp\controller\MovieController.class
+com\seuapp\config\SwaggerConfig.class
+com\seuapp\App.class
