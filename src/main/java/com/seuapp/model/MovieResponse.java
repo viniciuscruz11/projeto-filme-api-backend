@@ -3,7 +3,7 @@ package com.seuapp.model;
 public class MovieResponse {
     private String title;
     private int year;
-    private String type; // Por exemplo: "movie", "series"
+    private String type;
     private String imdbId;
 
     public MovieResponse(String title, int year, String type, String imdbId) {

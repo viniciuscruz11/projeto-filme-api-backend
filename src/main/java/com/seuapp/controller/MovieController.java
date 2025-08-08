@@ -2,14 +2,16 @@ package com.seuapp.controller;
 
 import com.seuapp.model.MovieResponse;
 import com.seuapp.service.MovieService;
-import com.github.vincentbrison.spring.boot.rate.limiter.annotation.RateLimit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.gateway.filter.GatewayFilter;
+import org.springframework.cloud.gateway.filter.factory.GatewayFilterFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
 @RequestMapping("/api/movies")
 public class MovieController {
 
@@ -22,7 +24,6 @@ public class MovieController {
     }
 
     @GetMapping("/search")
-    @RateLimit(limit = 10, duration = 60)
     public List<MovieResponse> searchMovies(
             @RequestParam(required = false) String title,
             @RequestParam(required = false) String year,

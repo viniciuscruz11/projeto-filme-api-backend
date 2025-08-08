@@ -1,4 +1,4 @@
-package main.java.com.seuapp.service;
+package com.seuapp.service;
 
 import com.seuapp.client.ExternalApiClient;
 import com.seuapp.model.MovieResponse;
