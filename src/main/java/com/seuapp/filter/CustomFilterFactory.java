@@ -42,7 +42,6 @@ public class CustomFilterFactory extends AbstractGatewayFilterFactory<CustomFilt
         };
     }
 
-    @Override
     public String getName() {
         return "CustomFilter";
     }

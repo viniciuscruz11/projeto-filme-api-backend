@@ -1,0 +1,7 @@
+com\seuapp\filter\CustomFilterFactory$Config.class
+com\seuapp\service\MovieService.class
+com\seuapp\controller\MovieController.class
+com\seuapp\MyApplication.class
+com\seuapp\filter\CustomFilterFactory.class
+com\seuapp\model\MovieResponse.class
+com\seuapp\client\ExternalApiClient.class

@@ -24,7 +24,7 @@ public class MovieService {
     @Cacheable(value = "movies", key = "#title + #year + #type + #page")
     public List<MovieResponse> searchMovies(String title, String year, String type, int page) {
         logger.info("Searching movies with title: {}, year: {}, type: {}, page: {}", title, year, type, page);
-        List<MovieResponse> movies = externalApiClient.searchMovies(title, year, type, page);
+        List<MovieResponse> movies = (List<MovieResponse>) externalApiClient.searchMovies(title, year, type, page);
         logger.info("Found {} movies", movies.size());
         return movies;
     }
